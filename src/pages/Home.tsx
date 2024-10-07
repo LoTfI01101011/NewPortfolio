@@ -5,11 +5,11 @@ interface Location {
   pathname: string
 }
 const Home = () => {
-  let location:Location = useLocation()
+  let location: Location = useLocation()
   return (
     <>
-    <Navbar location={location.pathname}/>
-    <Hero />
+      <Navbar location={location.pathname} />
+      <Hero />
     </>
   )
 }
