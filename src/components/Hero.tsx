@@ -46,8 +46,8 @@ const Hero = () => {
           animate="visible" 
           className="bg-slate-800 rounded-xl text-white p-4 row-span-1 col-span-2"
         >
-          <h1 className="text-2xl">Who am I ?</h1>
-          <p className="mt-4 text-slate-300 line-clamp-3">
+          <h1 className="text-xl md:text-2xl">Who am I ?</h1>
+          <p className="mt-4 text-slate-300 line-clamp-3 text-sm md:text-base">
             Hi, I'm Kaddari Lotfi Tadj Eddine, a recent computer science graduate with a strong passion for backend and full-stack development.
           </p>
         </motion.div>
@@ -58,9 +58,9 @@ const Hero = () => {
           animate="visible" 
           className="bg-slate-800 rounded-xl text-white p-4 row-span-2 col-span-1"
         >
-          <h1 className="text-2xl">Do I have Experience</h1>
-          <h2 className="mt-2 text-lg">Education final project (Feb-2024 Jul-2024):</h2>
-          <p className="mt-4 line-clamp-6 text-slate-300 md:line-clamp-none">
+          <h1 className="text-xl md:text-2xl">Do I have Experience</h1>
+          <h2 className="mt-2 text-base md:text-lg">Education final project (Feb-2024 Jul-2024):</h2>
+          <p className="mt-4 line-clamp-6 text-slate-300 text-sm md:line-clamp-none md:text-base">
             I created a startup with fellow students for our final project, where we sold online courses. My responsibilities included designing the database, developing backend code that integrated both mobile and web platforms, and leading the development process.
           </p>
         </motion.div>
@@ -87,9 +87,9 @@ const Hero = () => {
           animate="visible" 
           className="bg-slate-800 rounded-xl text-white py-2 px-4 row-span-1 col-span-2"
         >
-          <h1 className="text-2xl">My Education</h1>
-          <h2 className="mt-2 text-lg">Bachelor degree (2024):</h2>
-          <p className="mt-1 text-slate-300">
+          <h1 className="text-xl md:text-2xl">My Education</h1>
+          <h2 className="mt-2 text-base md:text-lg">Bachelor degree (2024):</h2>
+          <p className="mt-1 text-slate-300 text-sm md:text-base">
             I recently graduated with a bachelor's degree in Computer Science from the University of Boumerdes, Algeria.
           </p>
         </motion.div>
@@ -100,7 +100,7 @@ const Hero = () => {
           animate="visible" 
           className="bg-slate-800 rounded-xl text-white p-4 row-span-2 col-span-1"
         >
-          <h1 className="text-2xl">Technologies</h1>
+          <h1 className="text-xl md:text-2xl">Technologies</h1>
           <div className="flex flex-wrap gap-4 mt-4">
             {technologies.map((tech, index) => (
               <motion.div key={index} title={tech.name} whileHover={{ scale: 1.2 }}>
