@@ -3,9 +3,7 @@ import { FaReact } from "react-icons/fa"
 import { RiTailwindCssFill } from "react-icons/ri"
 import { SiLaravel, SiRabbitmq, SiTypescript } from "react-icons/si"
 import { motion } from 'framer-motion';
-import { GrGolang } from "react-icons/gr";
 import { FaGolang } from "react-icons/fa6";
-import { PiRabbit } from "react-icons/pi";
 
 const Hero = () => {
 
