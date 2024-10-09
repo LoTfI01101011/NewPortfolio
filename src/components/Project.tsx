@@ -7,51 +7,106 @@ const Project = () => {
       x: 0,
       y: 0,
       opacity: 1,
-      transition: { duration: 0.5, delay: delay }
+      transition: { duration: 0.6, delay: delay, ease: "easeOut" }
     }
-  })
+  });
+
   return (
-    <div className='w-full h-[550px] flex flex-col items-center justify-center overflow-hidden'>
-      <div className="mt-6 mb-3 w-[1200px] h-[275px] grid grid-flow-col grid-rows-1 gap-4 ">
-        <motion.div variants={container1(0.1, -20)} initial="hidden" animate="visible" className="bg-slate-900 rounded-xl">
-          <h1 className="text-2xl text-white m-3 pb-5 border-b-4 border-slate-200">GoForcer (CLI)</h1>
-          <p className="m-3 text-slate-300 line-clamp-6 md:line-clamp-none leading-relaxed">
-            I developed a tool with <span className="text-cyan-400 font-semibold">Go</span> that brute-forces URLs by sending multiple requests to discover bugs for the purpose of penetration testing. I utilized
-            <span className="text-cyan-400 font-semibold"> concurrency </span>
-            patterns such as
-            <span className="text-cyan-400 font-semibold"> semaphores </span>
-            and employed the Go/Viper package.
-          </p>
+    <div className='w-full h-auto flex flex-col items-center justify-center bg-gray-900 py-10 px-4'>
+      {/* Projects Grid - 2x2 Layout */}
+      <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 mb-12">
+        <motion.div
+          variants={container1(0.1, -20)}
+          initial="hidden"
+          animate="visible"
+          whileHover={{ scale: 1.05 }}
+          className="relative bg-slate-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+        >
+          <div className="p-4">
+            <h1 className="text-2xl text-white pb-3 border-b-2 border-slate-600">GoForcer (CLI)</h1>
+            <p className="mt-3 text-slate-300 leading-relaxed">
+              I developed a tool with <span className="text-cyan-400 font-semibold">Go</span> that brute-forces URLs by sending multiple requests to discover bugs for penetration testing. I used <span className="text-cyan-400 font-semibold">concurrency</span> patterns like <span className="text-cyan-400 font-semibold">semaphores</span> and employed the Go/Viper package.
+            </p>
+          </div>
+          <div className="absolute inset-0 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-slate-900/80 rounded-xl">
+            <a href="#" className="bg-cyan-400 text-slate-900 font-semibold py-2 px-4 rounded-lg">View Source Code</a>
+          </div>
         </motion.div>
-        <motion.div variants={container1(0.1, -20)} initial="hidden" animate="visible" className="bg-slate-900 rounded-xl col-span-2">
-          <h1 className="text-2xl text-white m-3 pb-5 border-b-4 border-slate-200">Library</h1>
-          <p className="m-3 text-slate-300 line-clamp-6 md:line-clamp-none leading-relaxed">
-            I developed a RESTful API for a library management system using the <span className="text-cyan-300 font-semibold">Gin Gonic</span> framework, ensuring lightweight and efficient performance. The API leverages <span className="text-cyan-300 font-semibold">GORM</span> for seamless database interactions, while <span className="text-cyan-300 font-semibold">Redis</span> is integrated to cache data and manage blacklisted <span className="text-cyan-300 font-semibold">JWT</span> tokens for secure authentication. <span className="text-cyan-300 font-semibold">PostgreSQL</span> serves as the database, offering reliability and scalability for data storage.
-          </p>
+
+        <motion.div
+          variants={container1(0.2, -20)}
+          initial="hidden"
+          animate="visible"
+          whileHover={{ scale: 1.05 }}
+          className="relative bg-slate-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+        >
+          <div className="p-4">
+            <h1 className="text-2xl text-white pb-3 border-b-2 border-slate-600">Library</h1>
+            <p className="mt-3 text-slate-300 leading-relaxed">
+              I developed a RESTful API for a library management system using <span className="text-cyan-300 font-semibold">Gin Gonic</span>, <span className="text-cyan-300 font-semibold">GORM</span>, and <span className="text-cyan-300 font-semibold">Redis</span>. The system uses <span className="text-cyan-300 font-semibold">PostgreSQL</span> for database storage.
+            </p>
+          </div>
+          <div className="absolute inset-0 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-slate-900/80 rounded-xl">
+            <a href="#" className="bg-cyan-400 text-slate-900 font-semibold py-2 px-4 rounded-lg">View Source Code</a>
+          </div>
         </motion.div>
-        <motion.div variants={container1(0.8, -20)} initial="hidden" animate="visible" className="bg-slate-800 rounded-xl">
-          <h1 className="text-2xl text-white m-3 pb-5 border-b-4 border-slate-200">Blog</h1>
-          <p className="m-3 text-slate-300 line-clamp-6 md:line-clamp-none leading-relaxed">
-            I developed a blog website using <span className="text-red-500 font-semibold">Laravel</span> for the back end, with <span className="text-red-500 font-semibold">MariaDB</span> for the database. I integrated <span className="text-red-500 font-semibold">Mailchimp</span> for managing newsletters and used <span className="text-red-500 font-semibold">Laravel Blade</span> for front-end templating, along with <span className="text-red-500 font-semibold">Alpine.js</span> to add interactivity.
-          </p>
+
+        <motion.div
+          variants={container1(0.3, -20)}
+          initial="hidden"
+          animate="visible"
+          whileHover={{ scale: 1.05 }}
+          className="relative bg-slate-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+        >
+          <div className="p-4">
+            <h1 className="text-2xl text-white pb-3 border-b-2 border-slate-600">Blog</h1>
+            <p className="mt-3 text-slate-300 leading-relaxed">
+              I developed a blog using <span className="text-red-500 font-semibold">Laravel</span> and <span className="text-red-500 font-semibold">MariaDB</span>. Integrated with <span className="text-red-500 font-semibold">Mailchimp</span> for newsletters and <span className="text-red-500 font-semibold">Laravel Blade</span> and <span className="text-red-500 font-semibold">Alpine.js</span> for the front end.
+            </p>
+          </div>
+          <div className="absolute inset-0 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-slate-900/80 rounded-xl">
+            <a href="#" className="bg-cyan-400 text-slate-900 font-semibold py-2 px-4 rounded-lg">View Source Code</a>
+          </div>
         </motion.div>
-      </div>
-      <div className='w-[1100px] h-[275px]  flex flex-center gap-4'>
-        <motion.div variants={container1(0.1, 20)} initial="hidden" animate="visible" className="bg-slate-900 rounded-xl col-span-2">
-          <h1 className="text-2xl text-white m-3 pb-5 border-b-4 border-slate-200">E-learning</h1>
-          <p className='m-3 line-clamp-6 text-slate-300 md:line-clamp-none'>
-            I developed a robust RESTful API using <span className="text-red-500 font-semibold">Laravel</span>, designed to serve both mobile and web applications seamlessly. The API supports various user roles, such as students and, each with distinct privileges. Features include user authentication, commenting functionality, and the ability to like posts. All data is securely stored and managed using <span className="text-red-500 font-semibold">MariaDB</span>, ensuring high performance and reliability across platforms.
-          </p>
+
+        <motion.div
+          variants={container1(0.4, -20)}
+          initial="hidden"
+          animate="visible"
+          whileHover={{ scale: 1.05 }}
+          className="relative bg-slate-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+        >
+          <div className="p-4">
+            <h1 className="text-2xl text-white pb-3 border-b-2 border-slate-600">E-learning</h1>
+            <p className="mt-3 text-slate-300 leading-relaxed">
+              I developed a RESTful API using <span className="text-red-500 font-semibold">Laravel</span>, supporting user roles like students and teachers, and managed data storage with <span className="text-red-500 font-semibold">MariaDB</span>.
+            </p>
+          </div>
+          <div className="absolute inset-0 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-slate-900/80 rounded-xl">
+            <a href="#" className="bg-cyan-400 text-slate-900 font-semibold py-2 px-4 rounded-lg">View Source Code</a>
+          </div>
         </motion.div>
-        <motion.div variants={container1(0.8, 20)} initial="hidden" animate="visible" className="bg-slate-800 rounded-xl col-span-2">
-          <h1 className="text-2xl text-white m-3 pb-5 border-b-4 border-slate-200">E-commerce</h1>
-          <p className='m-3 line-clamp-6 text-slate-300 md:line-clamp-none'>
-            I’m developing a backend with <span className="text-cyan-400 font-semibold">Go</span> for an E-commerce shop using the microservices pattern. I'm using the <span className="text-cyan-400 font-semibold">Chi router</span> to create a REST API for communication between the client and the API gateway. For inter-service communication, I'm employing <span className="text-cyan-400 font-semibold">gRPC</span> with <span className="text-cyan-400 font-semibold">Protocol Buffers</span>. <span className="text-cyan-400 font-semibold">Redis</span> is used for caching, while <span className="text-cyan-400 font-semibold">MongoDB</span> and <span className="text-cyan-400 font-semibold">PostgreSQL</span> serve as the databases. Additionally, <span className="text-cyan-400 font-semibold">RabbitMQ</span> is integrated as the message broker, and <span className="text-cyan-400 font-semibold">Docker</span> is used to containerize the project.
-          </p>
+
+        <motion.div
+          variants={container1(0.5, -20)}
+          initial="hidden"
+          animate="visible"
+          whileHover={{ scale: 1.05 }}
+          className="relative bg-slate-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+        >
+          <div className="p-4">
+            <h1 className="text-2xl text-white pb-3 border-b-2 border-slate-600">E-commerce</h1>
+            <p className="mt-3 text-slate-300 leading-relaxed">
+              I’m developing a backend for an E-commerce shop using <span className="text-cyan-400 font-semibold">Go</span>, <span className="text-cyan-400 font-semibold">Chi router</span> for REST, <span className="text-cyan-400 font-semibold">gRPC</span> for inter-service communication, <span className="text-cyan-400 font-semibold">Redis</span> for caching, and <span className="text-cyan-400 font-semibold">RabbitMQ</span> for message brokering.
+            </p>
+          </div>
+          <div className="absolute inset-0 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-slate-900/80 rounded-xl">
+            <a href="#" className="bg-cyan-400 text-slate-900 font-semibold py-2 px-4 rounded-lg">View Source Code</a>
+          </div>
         </motion.div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
