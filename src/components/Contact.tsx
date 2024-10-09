@@ -1,4 +1,4 @@
-import { BsGithub, BsInstagram, BsLinkedin, BsX } from "react-icons/bs"
+import { BsGithub, BsInstagram, BsLinkedin} from "react-icons/bs"
 import { FaXTwitter } from "react-icons/fa6"
 import { SiGmail } from "react-icons/si"
 import { Link } from "react-router-dom"
