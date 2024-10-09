@@ -48,7 +48,7 @@ const Hero = () => {
           </p>
         </motion.div>
         <motion.div variants={container2(0.1, 0)} initial="hidden" animate="visible" className="bg-slate-900 rounded-xl text-white p-4 overflow-hidden grid gird-col justify-center items-center">
-          <motion.div variants={container3(0.3)} initial="hidden" animate="visible" className="m-auto"><img src="images/my profile pic.png" className="w-20 h-20 rounded-full block" />
+          <motion.div variants={container3(0.3)} initial="hidden" animate="visible" className="m-auto"><img src="dist/my profile pic.png" className="w-20 h-20 rounded-full block" />
           </motion.div>
           <motion.div variants={container3(0.3)} initial="hidden" animate="visible">
             <h1>Kaddari Lotfi Tadj Eddine</h1>
