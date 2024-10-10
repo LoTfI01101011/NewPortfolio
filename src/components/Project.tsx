@@ -29,7 +29,7 @@ const Project = () => {
             </p>
           </div>
           <div className="absolute inset-0 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-slate-900/80 rounded-xl">
-            <a href="#" className="bg-cyan-400 text-slate-900 font-semibold py-2 px-4 rounded-lg">View Source Code</a>
+            <a href="https://github.com/LoTfI01101011/Goforcer" className="bg-cyan-400 text-slate-900 font-semibold py-2 px-4 rounded-lg">View Source Code</a>
           </div>
         </motion.div>
 
@@ -47,7 +47,7 @@ const Project = () => {
             </p>
           </div>
           <div className="absolute inset-0 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-slate-900/80 rounded-xl">
-            <a href="#" className="bg-cyan-400 text-slate-900 font-semibold py-2 px-4 rounded-lg">View Source Code</a>
+            <a href="https://github.com/LoTfI01101011/Library" className="bg-cyan-400 text-slate-900 font-semibold py-2 px-4 rounded-lg">View Source Code</a>
           </div>
         </motion.div>
 
@@ -65,7 +65,7 @@ const Project = () => {
             </p>
           </div>
           <div className="absolute inset-0 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-slate-900/80 rounded-xl">
-            <a href="#" className="bg-cyan-400 text-slate-900 font-semibold py-2 px-4 rounded-lg">View Source Code</a>
+            <a href="https://github.com/LoTfI01101011/my-blog-website" className="bg-cyan-400 text-slate-900 font-semibold py-2 px-4 rounded-lg">View Source Code</a>
           </div>
         </motion.div>
 
@@ -83,7 +83,7 @@ const Project = () => {
             </p>
           </div>
           <div className="absolute inset-0 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-slate-900/80 rounded-xl">
-            <a href="#" className="bg-cyan-400 text-slate-900 font-semibold py-2 px-4 rounded-lg">View Source Code</a>
+            <a href="https://github.com/LoTfI01101011/e-learning-api" className="bg-cyan-400 text-slate-900 font-semibold py-2 px-4 rounded-lg">View Source Code</a>
           </div>
         </motion.div>
 
@@ -101,7 +101,7 @@ const Project = () => {
             </p>
           </div>
           <div className="absolute inset-0 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-slate-900/80 rounded-xl">
-            <a href="#" className="bg-cyan-400 text-slate-900 font-semibold py-2 px-4 rounded-lg">View Source Code</a>
+            <a href="https://github.com/LoTfI01101011/E-commerce" className="bg-cyan-400 text-slate-900 font-semibold py-2 px-4 rounded-lg">View Source Code</a>
           </div>
         </motion.div>
       </div>
