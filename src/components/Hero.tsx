@@ -21,7 +21,6 @@ const Hero = () => {
     }
   });
 
-  // Technologies data
   const technologies = [
     { icon: <FaReact size={32} className="text-blue-400" />, name: "React" },
     { icon: <FaGolang size={32} className="text-blue-400" />, name: "GoLang" },
@@ -38,7 +37,7 @@ const Hero = () => {
 
   return (
     <div className="w-full h-[550px] mx-auto flex justify-center items-center pb-4">
-      <div className="m-4 w-[800px] h-full grid grid-rows-3 grid-flow-col gap-4 font-serif">
+      <div className="m-4 w-[800px] h-full flex flex-col  md:grid grid-rows-3 grid-flow-col gap-4 font-serif">
         
         <motion.div 
           variants={container(0.5, -30)} 
@@ -53,7 +52,7 @@ const Hero = () => {
         </motion.div>
 
         <motion.div 
-          variants={container(2, -30)} 
+          variants={container(1, -30)} 
           initial="hidden" 
           animate="visible" 
           className="bg-slate-800 rounded-xl text-white p-4 row-span-2 col-span-1"
@@ -80,7 +79,7 @@ const Hero = () => {
           <motion.h1 variants={container(0.3)}>Kaddari Lotfi Tadj Eddine</motion.h1>
         </motion.div>
 
-        {/* Education Section */}
+
         <motion.div 
           variants={container(1.5, 30)} 
           initial="hidden" 
@@ -95,7 +94,7 @@ const Hero = () => {
         </motion.div>
 
         <motion.div 
-          variants={container(1, 30)} 
+          variants={container(2, 30)} 
           initial="hidden" 
           animate="visible" 
           className="bg-slate-800 rounded-xl text-white p-4 row-span-2 col-span-1"
