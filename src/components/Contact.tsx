@@ -33,7 +33,7 @@ const Contact = () => {
             <h1 className="text-lg text-slate-50 font-semibold my-4">Mail: lotfi.kaddari.lp2@gmail.com</h1>
           </div>
 
-          <Link to='https://drive.google.com/uc?export=download&id=1T6Pj2qY6mxjsSZHSWOJQ_Fy3_FaFsjpC' className="mt-8">
+          <Link to='https://drive.google.com/uc?export=download&id=1mNEiV6ActISTydUgsqngo2KHmSvDM49G' className="mt-8">
             <div className="rounded-full p-4 border-2 border-slate-50 text-slate-50 font-semibold hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
               Download CV
             </div>
