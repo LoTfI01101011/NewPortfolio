@@ -87,9 +87,9 @@ const Hero = () => {
           className="bg-slate-800 rounded-xl text-white py-2 px-4 row-span-1 col-span-2"
         >
           <h1 className="text-xl md:text-2xl">My Education</h1>
-          <h2 className="mt-2 text-base md:text-lg">Bachelor degree (2024):</h2>
+          <h2 className="mt-2 text-base md:text-lg">Bachelor degree (2024) , University of Boumerdes:</h2>
           <p className="mt-1 text-slate-300 text-sm md:text-base">
-            I recently graduated with a bachelor's degree in Computer Science from the University of Boumerdes, Algeria.
+            Coursework included algorithms, software engineering, database systems, distributed systems, web development, networking, operating systems, and cybersecurity
           </p>
         </motion.div>
 
